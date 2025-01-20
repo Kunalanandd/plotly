@@ -22,7 +22,7 @@ plot = st.sidebar.button('Plot Graph')
 
 if plot:
     st.text("Size represent primary parameter")
-    st.text("Color represent Secondary parameter")
+    st.text("Color represent  parameter")
     if selected_state=='Overal India':
         fig = px.scatter_mapbox(df,lat='Latitude',lon='Longitude',size=primary_par,color=secondary_par,zoom=4,mapbox_style='carto-positron',size_max=30,width=1200,height=800,hover_name='District')
         st.plotly_chart(fig,use_cantainer_width=True)
